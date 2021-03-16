@@ -1,0 +1,36 @@
+@font-face {
+   font-family: "CentraleSans Light";
+   src: url("fonts/CentraleSansLight.woff") format("woff"), url("fonts/CentraleSansLight.eot") format("embedded-opentype"), url("fonts/CentraleSansLight.otf") format("opentype");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "CentraleSans Light";
+   src: url("fonts/CentraleSansLight-Italic.woff") format("woff"), url("fonts/CentraleSansLight-Italic.eot") format("embedded-opentype"), url("fonts/CentraleSansLight-Italic.otf") format("opentype");
+   font-weight: normal;
+   font-style: italic;
+}
+@font-face {
+   font-family: "CentraleSans Book";
+   src: url("fonts/CentraleSansBold.woff") format("woff"), url("fonts/CentraleSansBold.eot") format("embedded-opentype"), url("fonts/CentraleSansBold.otf") format("opentype");
+   font-weight: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: "CentraleSans Book";
+   src: url("fonts/CentraleSansBold-Italic.woff") format("woff"), url("fonts/CentraleSansBold-Italic.eot") format("embedded-opentype"), url("fonts/CentraleSansBold-Italic.otf") format("opentype");
+   font-weight: bold;
+   font-style: italic;
+}
+@font-face {
+   font-family: "CentraleSans Book";
+   src: url("fonts/CentraleSansBook.woff") format("woff"), url("fonts/CentraleSansBook.eot") format("embedded-opentype"), url("fonts/CentraleSansBook.otf") format("opentype");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "CentraleSans Book";
+   src: url("fonts/CentraleSansBook-Italic.woff") format("woff"), url("fonts/CentraleSansBook-Italic.eot") format("embedded-opentype"), url("fonts/CentraleSansBook-Italic.otf") format("opentype");
+   font-weight: normal;
+   font-style: italic;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
+        <style>
+            .pageImg {
+                display: none;
+            }
+            body{
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        </style>
+    </head>
+    <body>
+        <img class="pageImg p3img0" src="shield-dark-1980.png"  />
+        <img class="pageImg p3img1" src="shield-dark-1980.png"  />
+        <img class="pageImg p3img2" src="cloc-hospital.png" />
+        <img class="pageImg p3img3" src="40-transitions.png"   />
+        <img class="pageImg p3img4" src="shield-dark-1980.png"  />
+        <img class="pageImg p3img5" src="shield-dark-1980.png"  />
+        <img class="pageImg p3img6" src="omni-transport-officer.png" />
+        <script src="./../js/pageLogic.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                PageLogic.connectToSocketServer();
+                PageLogic.initPage(3);
+            });
+        </script>
+    </body>
+</html>

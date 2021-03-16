@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
+        <style>
+            .pageImg {
+                display: none;
+            }
+            body{
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        </style>
+    </head>
+    <body>
+        <img class="pageImg p6img0" src="shield-dark-1980.png" />
+        <img class="pageImg p6img1" src="shield-dark-1980.png" />
+        <div class="pageImg p6img2">
+            <iframe src="https://l54oh0.axshare.com/#g=1&p=cloc_vision&c=1" height="1080" width="1920" allowfullscreen="" frameborder="0" >
+            </iframe>
+        </div>
+        <div class="pageImg p6img3">
+            <iframe src="https://evpdrv.axshare.com/#g=1&p=patientflow_2020&c=1" height="1080" width="1920" allowfullscreen="" frameborder="0">
+            </iframe>
+        </div>
+        <img class="pageImg p6img4" src="shield-dark-1980.png" />
+        <img class="pageImg p6img5" src="shield-dark-1980.png" />
+        <div class="pageImg p6img6">
+            <iframe src="https://omnicare-app-demo.cloud.pcftest.com/" height="1080" width="1920" allowfullscreen="" frameborder="0" >
+            </iframe>
+        </div>        
+        <script src="./../js/pageLogic.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                PageLogic.connectToSocketServer();
+                PageLogic.initPage(6);
+            });
+        </script>
+    </body>
+</html>

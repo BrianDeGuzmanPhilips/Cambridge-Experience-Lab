@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/tablet_styles.css">
+        <link href="https://file.myfontastic.com/ayvYq9t8hUPRJLcfEcxfLM/icons.css" rel="stylesheet">
+        </head>
+    <body>
+            <div id="main">
+                <div class="header">
+                    <div class="title">Cambridge Experience Center</div>
+                    <div class="main" id="1-1;2-0;3-0;4-0;5-0;6-0;7-0"><i class="icon-layout3x3 icon-white"></i></div>
+                    <div class="sleep" id="1-0;2-0;3-0;4-0;5-0;6-0;7-0"><i class="icon-moon icon-white"></i></div>
+                </div>
+                <div class="content">
+                    <div class="app-tiles">
+                        <div class="tile" id="1-2;2-2;3-2;4-2;5-2;6-2;7-2">
+                            <div class="tile-image cloc"></div>
+                            <div class="tile-title">Command Center Vision</div>
+                        </div>
+                        <!-- <div class="tile" id="1-2;2-2;3-2;4-2;5-2;6-2;7-2">
+                            <div class="tile-image pfcs"></div>
+                            <div class="tile-title">Patient Flow Capacity Suite</div>
+                        </div> -->
+                        <div class="tile" id="1-3;2-0;3-0;4-0;5-0;6-0;7-0">
+                            <div class="tile-image baptist"></div>
+                            <div class="tile-title">Baptist Rooms of the Future</div>                      
+                        </div>
+                        <!-- <div class="tile" id="1-5;2-0;3-0;4-0;5-0;6-0;7-0">
+                            <div class="tile-image virtual-room"></div>
+                            <div class="tile-title">Adult Intensive Care</div>                      
+                        </div> -->
+                        <div class="tile" id="1-4;2-0;3-0;4-0;5-0;6-0;7-0">
+                            <div class="tile-image cmon"></div>
+                            <div class="tile-title">Contactless Wellness Screening</div>
+                        </div>
+                        <div class="tile" id="1-5;2-6;3-6;4-6;5-6;6-6;7-6">
+                            <div class="tile-image omni"></div>
+                            <div class="tile-title">OmniCare</div>                            
+                        </div>
+                </div>
+            </div>
+            </div>
+        <script src="./../js/pageLogic.js"></script>
+        <script>
+            $(function() {
+                PageLogic.connectToSocketServer();
+
+                $('.tabletBtn').click(function() {
+                    var btnId = $(this).attr('id');
+                    var pageImgPayload = btnId.split('-');
+                    var payload = { page: pageImgPayload[0], img: pageImgPayload[1] };
+                    PageLogic.sendToSocketServer('tablet-img-switch', payload);
+                });
+
+                $('.tile').click(function() {
+                    var pgMsgs = $(this).attr('id').split(';');
+
+                    for(var i = 0; i < pgMsgs.length; i++) {
+                        var spPayload = pgMsgs[i].split('-');
+                        var payload = { page: spPayload[0], img: spPayload[1] };
+                        PageLogic.sendToSocketServer('tablet-img-switch', payload);
+                    }
+                });
+                $('.main').click(function() {
+                    var pgMsgs = $(this).attr('id').split(';');
+
+                    for(var i = 0; i < pgMsgs.length; i++) {
+                        var spPayload = pgMsgs[i].split('-');
+                        var payload = { page: spPayload[0], img: spPayload[1] };
+                        PageLogic.sendToSocketServer('tablet-img-switch', payload);
+                    }
+                });
+                $('.sleep').click(function() {
+                    var pgMsgs = $(this).attr('id').split(';');
+
+                    for(var i = 0; i < pgMsgs.length; i++) {
+                        var spPayload = pgMsgs[i].split('-');
+                        var payload = { page: spPayload[0], img: spPayload[1] };
+                        PageLogic.sendToSocketServer('tablet-img-switch', payload);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

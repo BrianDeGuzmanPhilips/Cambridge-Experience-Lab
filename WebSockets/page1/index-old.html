@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
+        <style>
+            .pageImg {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="pageImg p1img0" src="shield-blue.png" />
+        <img class="pageImg p1img1"  src="tasy-pfcs-wide_empty.png" />
+        <img class="pageImg p1img2"  src="tasy-pfcs-wide_emergency.png" />
+        <img class="pageImg p1img3"  src="tasy-pfcs-wide-discharge.png" />
+        <img class="pageImg p1img4"  src="interior-airbag-bkg.jpg" />
+        <iframe src="URL"></iframe>
+        <script src="./../js/pageLogic.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                PageLogic.connectToSocketServer();
+                PageLogic.initPage(1);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
+    </head>
+    <body>
+        <h1>This is the tablet</h1>
+        <button class="tabletBtn" id="0-0">RESET ALL SCREENS</button>
+        <h2>Page 1</h2>
+        <button class="tabletBtn" id="1-0">Blue Shield</button>
+        <button class="tabletBtn" id="1-1">PFCS Main</button>
+        <button class="tabletBtn" id="1-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="1-3">PCFS Discharge</button>
+        <button class="tabletBtn" id="1-4">OmniCare</button>
+        <br/>
+        <h2>Top Left</h2>
+        <button class="tabletBtn" id="2-0">Blue Shield</button>
+        <button class="tabletBtn" id="2-1">PFCS Main</button>
+        <button class="tabletBtn" id="2-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="2-3">PFCS Discharge</button>
+        <button class="tabletBtn" id="2-4">OmniCare</button>
+        <br/>
+        <h2>Top Middle</h2>
+        <button class="tabletBtn" id="3-0">Blue Shield</button>
+        <button class="tabletBtn" id="3-1">PFCS Main</button>
+        <button class="tabletBtn" id="3-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="3-3">PFCS Discharge</button>
+        <button class="tabletBtn" id="3-4">OmniCare</button>
+        <br/>
+        <h2>Top Right</h2>
+        <button class="tabletBtn" id="4-0">Blue Shield</button>
+        <button class="tabletBtn" id="4-1">PFCS Main</button>
+        <button class="tabletBtn" id="4-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="4-3">PFCS Discharge</button>
+        <button class="tabletBtn" id="4-4">OmniCare</button>
+        <br/>
+        <h2>Bottom Left</h2>
+        <button class="tabletBtn" id="5-0">Blue Shield</button>
+        <button class="tabletBtn" id="5-1">PFCS Main</button>
+        <button class="tabletBtn" id="5-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="5-3">PFCS Discharge</button>
+        <button class="tabletBtn" id="5-4">OmniCare</button>
+        <button class="tabletBtn" id="5-5">OmniCare</button>
+        <br/>
+        <h2>Bottom Middle</h2>
+        <button class="tabletBtn" id="6-0">Blue Shield</button>
+        <button class="tabletBtn" id="6-1">PFCS Main</button>
+        <button class="tabletBtn" id="6-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="6-3">PFCS Discharge</button>
+        <button class="tabletBtn" id="6-4">OmniCare</button>
+        <button class="tabletBtn" id="6-5">OmniCare 2</button>
+        <br/>
+        <h2>Bottom Right</h2>
+        <button class="tabletBtn" id="7-0">Blue Shield</button>
+        <button class="tabletBtn" id="7-1">PFCS Main</button>
+        <button class="tabletBtn" id="7-2">PFCS Emergency</button>
+        <button class="tabletBtn" id="7-3">PFCS Discharge</button>
+        <button class="tabletBtn" id="7-4">OmniCare</button>
+        <button class="tabletBtn" id="7-5">OmniCare 2</button>
+        <br/>
+        <br/>
+        <button class="toAll" id="1-1;2-1;3-1;4-1;5-1;6-1;7-1">All Blue</button>
+        <button class="toAll" id="1-2;2-2;3-2;4-2;5-2;6-2;7-2">All PFCS</button>
+        <button class="toAll" id="1-3;2-3;3-3;4-3;5-3;6-3;7-3">All Emergency</button>
+        <button class="toAll" id="1-4;2-4;3-4;4-4;5-4;6-4;7-4">All Discharge</button>
+        <button class="toAll" id="1-5;2-5;3-4;4-5;5-5;6-5;7-5">All OmniCare</button>
+        <button class="toAll" id="1-6;2-6;3-4;4-6;5-6;6-6;7-6">All OmniCare 2</button>
+        <script src="./../js/pageLogic.js"></script>
+        <script>
+            $(function() {
+                PageLogic.connectToSocketServer();
+
+                $('.tabletBtn').click(function() {
+                    var btnId = $(this).attr('id');
+                    var pageImgPayload = btnId.split('-');
+                    var payload = { page: pageImgPayload[0], img: pageImgPayload[1] };
+                    PageLogic.sendToSocketServer('tablet-img-switch', payload);
+                });
+
+                $('.toAll').click(function() {
+                    var pgMsgs = $(this).attr('id').split(';');
+
+                    for(var i = 0; i < pgMsgs.length; i++) {
+                        var spPayload = pgMsgs[i].split('-');
+                        var payload = { page: spPayload[0], img: spPayload[1] };
+                        PageLogic.sendToSocketServer('tablet-img-switch', payload);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

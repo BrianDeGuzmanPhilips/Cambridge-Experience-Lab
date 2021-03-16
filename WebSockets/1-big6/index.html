@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/tablet_styles.css">
+        <link href="https://file.myfontastic.com/ayvYq9t8hUPRJLcfEcxfLM/icons.css" rel="stylesheet">
+        </head>
+    <body>
+        <!-- Sleep -->
+        <div class="pageImg p1img0">
+            <iframe width="5760" height="2160" src="./video/cxl-landing.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Landing -->
+        <img class="pageImg p1img1" src="../1-big6/imgs/PHI_VXC_WelcomeScreen.png" />
+        <!-- cloc -->
+        <div class="pageImg p1img2">
+            <iframe src="https://l54oh0.axshare.com/#g=1&p=cloc_vision&c=1" height="2160" width="5760" allowfullscreen="" frameborder="0">
+            </iframe>
+            </div>
+        <!-- pfcs -->
+        <div class="pageImg p1img3">
+        <iframe src="https://kojkhb.axshare.com/pfcs_bigflow.html" height="2160" width="5760" allowfullscreen="" frameborder="0">
+        </iframe>
+        </div>
+        <!-- retail -->
+        <div class="pageImg p1img4">
+            <iframe src="https://storage.net-fs.com/hosting/6582882/7/" height="2400" width="5760" allowfullscreen="" frameborder="0">
+            </iframe>
+        </div>
+        <!-- lotus -->
+        <div class="pageImg p1img5" style="background-image: url(../page1/interior-airbag-bkg.jpg); width: 5760px; height: 2160px;">
+            <iframe src="https://storage.net-fs.com/hosting/6582882/0/" height="2400" width="5760" allowfullscreen="" frameborder="0">
+            </iframe>
+            </div>
+        <!-- OMNI -->
+        <div class="pageImg p1img6" style="background-image: url(../page1/interior-airbag-bkg.jpg); width: 5760px; height: 2160px;">
+            <iframe width="2560" height="1440" src="https://www.youtube.com/embed/z6hU5hUZspk" style="margin-top: 400px; margin-left:1600px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <script src="./../js/pageLogic.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                PageLogic.connectToSocketServer();
+                PageLogic.initPage(1);
+            });
+        </script>
+    </body>
+</html>

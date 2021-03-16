@@ -1,0 +1,48 @@
+#: locale=en
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Yale Experience Center
+
+## Skin
+
+### Tooltip
+IconButton_138AC8EB_1C81_A718_41B9_C0E861AF42F4.toolTip = Fullscreen
+IconButton_138AC8EB_1C81_A718_41B9_C0E861AF42F4_mobile.toolTip = Fullscreen
+
+## Media
+
+### Title
+panorama_C11CDB86_D94C_BC66_41E9_DA76543EB29C.label = Clinic Subwaiting Area
+panorama_C16F81A7_D97C_EFA6_41D1_A7BE21C06D2F.label = Patient Room
+panorama_C60640AA_D9B4_6DAE_41AA_FC4ECA426E30.label = Clinical Dashboard
+panorama_C94C18A8_D94F_9DAA_41D5_F746ED097F1C.label = Clinic Entry
+panorama_CC363AD9_D97D_FDEA_41E4_BDD57C85372F.label = Inpatient Tower
+panorama_E04A4A1F_EDBE_6F73_41DE_2C03D0E0F3E1.label = Office Lobby
+panorama_E06C9EAC_EDBE_A755_41E1_255403986551.label = Phone Check
+panorama_E0D0EB55_EDBE_ADF7_41E8_1497F197636C.label = Touchless Scan
+panorama_E283BC06_EDB6_6B55_41E8_D1EF466BCD69.label = Smart Scheduler
+panorama_F23CD4B9_E209_8FBD_4198_7B944B6F64D6.label = Experience Center
+panorama_FD4E82C7_EDCA_5CD2_41CD_DDC0D9531B04.label = Ultrasound Exam
+video_FC96C862_EDD7_ABCD_41ED_B560F65BB59B.label = PHI_Lotus_Dashboard
+video_FDC436B3_EDCA_64B3_41C3_D75C5A947A3B.label = PHI_Lotus_Video_720
+video_FDD5135A_EDCE_5DFD_41C7_6195FDC4CB67.label = PHI_RCC_Telehealth
+
+## Hotspot
+
+### Tooltip
+HotspotPanoramaOverlayArea_C1961217_D8CC_EC66_41A4_EC4D18A224AF.toolTip = Return to Lobby
+HotspotPanoramaOverlayArea_C1BAFADC_D8D3_9DEA_41E9_B17D4D83B345.toolTip = Return to Lobby
+HotspotPanoramaOverlayArea_C1D440C7_D8CC_6DE6_41CC_4F0E8E85E17A.toolTip = Return to Lobby
+
+## Action
+
+### URL
+LinkBehaviour_EC45338E_E1F7_D32F_41EA_5E1CC328A504.source = https://www.ynhhs.org/
+PopupWebFrameBehaviour_C0E5419B_D8B3_AC6E_41BA_4F6F72922024.url = https://iptf7r.axshare.com/philips_facility_access_-_kiosk.html
+PopupWebFrameBehaviour_CED4F282_D953_EC5E_41E7_D0BFEB8A7592.url = https://u0dzue.axshare.com/philips_facility_access.html
+PopupWebFrameBehaviour_F27DFE84_E2EB_DBE4_41A4_361C0E295C30.url = //player.vimeo.com/video/427047734
+PopupWebFrameBehaviour_F732ED44_E620_F0E3_41E9_527A9C950DD0.url = https://engine.metavrse.com/view?i=3453
