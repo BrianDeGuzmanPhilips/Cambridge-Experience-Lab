@@ -2,7 +2,7 @@
 
 ## Starting up the hardware on the 6th Floor
 
-There's a Media Wall Basic instruction in the repo here:
+There's a Media Wall Basic instruction in the repo [here](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
 
 ## Prerequisites
 
