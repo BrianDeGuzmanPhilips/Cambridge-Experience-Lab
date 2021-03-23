@@ -2,9 +2,15 @@
 
 ## Starting up the hardware on the 6th Floor
 
-There's a Media Wall Basic instruction in the repo [here](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
+Here's a Media Wall Basic instruction in the repo [here](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
 
-## Prerequisites
+## Reading Prerequisites
+
+### Technical Diagram of Software
+
+Here's a [technical diagram/ overview](CambridgeExperienceLabTechnicalFindings.pdf) of the software and it's subsequent parts.
+
+## Software Prerequisites
 
 ### Check if you have Node installed
 
@@ -54,3 +60,4 @@ _look at the Troubleshooting for info about the 'ip-address'_
 When you start the **http server** you can see the ip address your app is running on after the line **'Available on:'**.
 
 Make sure this is the same ip address being used on the **pageLogic.js** file in the front-end and the **pageSocket.js** file in the server.
+
