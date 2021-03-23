@@ -1,14 +1,36 @@
 # Cambridge-Experience-Lab
 
-## How to run the front-end js app
+## Starting up the hardware on the 6th Floor
+
+There's a Media Wall Basic instruction in the repo here:
+
+## Prerequisites
+
+### Check if you have Node installed
+
+In the terminal, check if you have node installed by running `node --version`.
+
+If there's an error, install node from this site: <https://nodejs.org/en/download/>
+
+### Install http-server locally
+
+After downloading node, you need to install http-server locally using this command: `npm install http-server`.
+
+This will allow you to run the front-end js app.
+
+## Run the front-end js app
 
 Navigate to the front-end folder called 'WebSockets' using `cd WebSockets` in the terminal.
 
+Run `npm install` to install the dependencies.
+
 Then run `http-server` to start the front-end app.
 
-## How run the socket server
+## Run the socket server
 
 Navigate to the server server folder called 'WebSocketsServer' using `cd WebSocketsServer` in the terminal.
+
+Run `npm install` to install the dependencies.
 
 Then run `node pagesocket.js` to start the socket server.
 
@@ -19,7 +41,7 @@ There are 7 pages in this app you can navigate to. Each one corresponding to a m
 You can use `http://{ip-address}:8080/{page-number}`.
 _look at the Troubleshooting for info about the 'ip-address'_
 
-### Page Numbers:
+### Page Numbers
 
 `page1` = this is the biggest screen in the lab. 6 monitors linked together into one. You can't miss it.
 
