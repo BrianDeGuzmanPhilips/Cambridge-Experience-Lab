@@ -2,13 +2,15 @@
 
 ## Starting up the hardware on the 6th Floor
 
-Here's a Media Wall Basic instruction in the repo [here](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
+Here's the [Media Wall Basic Start-up instructions](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
+
+This will guide you on how to start the different monitors and PCs connected to the Media Wall on the 6th floor.
 
 ## Reading Prerequisites
 
 ### Technical Diagram of Software
 
-Here's a [technical diagram/overview](CambridgeExperienceLabTechnicalFindings.pdf) of the software and it's subsequent parts.
+Here's a [technical diagram/overview](CambridgeExperienceLabTechnicalFindings.pdf) of the software and its subsequent parts.
 
 ## Software Prerequisites
 
