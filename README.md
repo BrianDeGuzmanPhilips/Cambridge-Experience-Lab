@@ -1,11 +1,5 @@
 # Cambridge-Experience-Lab Media Wall
 
-## Starting up the hardware on the 6th Floor
-
-Here's the [Media Wall Basic Start-up instructions](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
-
-This will guide you on how to start the different monitors and PCs connected to the Media Wall on the 6th floor.
-
 ## Reading Prerequisites
 
 ### Technical Diagram of Software
@@ -42,6 +36,12 @@ Run `npm install` to install the dependencies.
 
 Then run `node pagesocket.js` to start the socket server.
 
+## Starting up the hardware on the 6th Floor
+
+Once the software is running on terminal, it's time to start the Media Wall itself. Here's how: [Media Wall Basic Start-up instructions](CX%20Media%20Wall%20Basic%20Instr_02-2021.pdf).
+
+This will guide you on how to start the different monitors and PCs connected to the Media Wall on the 6th floor.
+
 ## Navigation
 
 There are 7 pages in this app you can navigate to. Each one corresponding to a monitor in the experience lab.
@@ -62,4 +62,3 @@ _look at the Troubleshooting for info about the 'ip-address'_
 When you start the **http server** you can see the ip address your app is running on after the line **'Available on:'**.
 
 Make sure this is the same ip address being used on the **pageLogic.js** file in the front-end and the **pageSocket.js** file in the server.
-
