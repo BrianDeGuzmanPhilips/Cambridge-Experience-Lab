@@ -1,4 +1,4 @@
-# Cambridge-Experience-Lab
+# Cambridge-Experience-Lab Media Wall
 
 ## Starting up the hardware on the 6th Floor
 
@@ -8,7 +8,7 @@ Here's a Media Wall Basic instruction in the repo [here](CX%20Media%20Wall%20Bas
 
 ### Technical Diagram of Software
 
-Here's a [technical diagram/ overview](CambridgeExperienceLabTechnicalFindings.pdf) of the software and it's subsequent parts.
+Here's a [technical diagram/overview](CambridgeExperienceLabTechnicalFindings.pdf) of the software and it's subsequent parts.
 
 ## Software Prerequisites
 
