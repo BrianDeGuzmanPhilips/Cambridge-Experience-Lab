@@ -237,10 +237,7 @@ label {
   
   
 }  
-span {  
-    color: white;  
-    font-size: 1.5em;  
-}  
+
 a {  
     float: right;  
     background-color: grey;  
@@ -254,3 +251,13 @@ a {
     margin: auto;
     font-size: 12em;
   }
+
+  /* Material Icon Sizes */
+
+  .md-18 { font-size: 18px !important; }
+  .md-24 { font-size: 24px !important; }
+  .md-36 { font-size: 36px !important; }
+  .md-48 { font-size: 48px !important; }
+
+  /* Material Icon Color */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
