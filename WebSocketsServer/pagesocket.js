@@ -1,7 +1,7 @@
 const server = require('http').createServer();
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://10.84.162.187:8080",
+        origin: "http://161.84.207.147:8080",
         methods: ["GET", "POST"],
         credentials: true
       }
@@ -15,7 +15,7 @@ io.on('connection', socket => {
   });
 
   socket.on('disconnect', () => {
-    console.log('disconnected');
+    console.log('disconnected');         
   });
 });
 

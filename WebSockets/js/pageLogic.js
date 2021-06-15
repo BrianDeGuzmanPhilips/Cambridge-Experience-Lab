@@ -10,7 +10,7 @@ var PageLogic = (function() {
     }
 
     function connectToSocketServer() {
-        socket = io('http://10.84.162.187:3000');
+        socket = io('http://161.84.207.147:3000');
 
         socket.on("connect", () => {
             console.log("Page " + pageNum + " connected");
