@@ -262,3 +262,9 @@ a {
 
   /* Material Icon Color */
   .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+.back-arrow {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
