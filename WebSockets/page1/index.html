@@ -8,9 +8,32 @@
                 display: none;
             }
             body{
-            margin: 0px;
-            padding: 0px;
-            overflow:hidden;
+                margin: 0px;
+                padding: 0px;
+                overflow:hidden;
+            }
+            .embed-container {
+                /* --video--width: 1296;
+                --video--height: 540; */
+
+                --video--width: 3840;
+                --video--height: 1440;
+
+                position: relative;
+                padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
+                overflow: hidden;
+                max-width: 100%;
+                background: black;
+                }
+
+                .embed-container iframe,
+                .embed-container object,
+                .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
             }
         </style>    
     </head>
@@ -42,6 +65,19 @@
             <iframe width="1920" height="1080" src="https://www.youtube.com/embed/z6hU5hUZspk" style="margin-top: 200px; margin-left:1000px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+        <!-- ROCC- VIDEO -->
+        <!-- <div class="pageImg p1img6" style= "width: 3840px; height: 1440px;">
+            <iframe src="https://player.vimeo.com/video/582694090" width="3840" height="1440" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <!-- <div class='embed-container pageImg p1img6'>
+            <iframe src='https://player.vimeo.com/video/582694090' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div> -->
+
+          <div class="pageImg p1img6">
+            <video width="3840" height="1440" src="./video/Philips-ROCC.mp4" style="position: fixed;" frameborder="0" controls autoplay loop>
+            </iframe>
+        </div>
+
         <script src="./../js/pageLogic.js"></script>
         <script type="text/javascript">
             $(function() {
