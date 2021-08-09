@@ -268,3 +268,32 @@ a {
     align-items: center;
     padding: 15px;
 }
+
+/* ROCC tablet view */
+.rocc-slide1 { 
+    background: url('../rocc/images/Slide1.JPG');
+}
+.rocc-slide2 { 
+    background: url('../rocc/images/Slide2.JPG');
+}
+.rocc-slide3 { 
+    background: url('../rocc/images/Slide3.JPG');
+}
+.rocc-slide4 { 
+    background: url('../rocc/images/Slide4.JPG');
+}
+.rocc-slide5 { 
+    background: url('../rocc/images/Slide5.JPG');
+}
+.rocc-slide6 { 
+    background: url('../rocc/images/Slide6.JPG');
+}
+.rocc-slide7 { 
+    background: url('../rocc/images/Slide7.JPG');
+}
+.rocc-slide9 { 
+    background: url('../rocc/images/Slide9.JPG');
+}
+.rocc-slide10 { 
+    background: url('../rocc/images/Slide10.JPG');
+}
