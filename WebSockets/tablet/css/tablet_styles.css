@@ -77,7 +77,8 @@ height: 100%;
 }
 .app-tiles {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-gap: 12px;
     background-color: #212121;
@@ -102,71 +103,71 @@ height: 100%;
     color: #fff;
 }
 .cmon { 
-    background: url('../imgs/PHI_IRIS_THUMBNAIL.png');
+    background: url('../images/PHI_IRIS_THUMBNAIL.png');
 }
 .retail { 
-    background: url('../imgs/retail-urg.png');
+    background: url('../images/retail-urg.png');
 }
 .lotus { 
-    background: url('../imgs/lotus-nicu.png');
+    background: url('../images/lotus-nicu.png');
 }
 .igt {
-    background: url('../imgs/PHI_IGT_THUMBNAIL.jpg');
+    background: url('../images/PHI_IGT_THUMBNAIL.jpg');
 }
 .bhx {
-    background: url('../imgs/PHI_BHX_THUMBNAIL.png');
+    background: url('../images/PHI_BHX_THUMBNAIL.png');
 }
 .m2icu {
-    background: url('../imgs/PHI_M2ICU_THUMBNAIL.jpg');
+    background: url('../images/PHI_M2ICU_THUMBNAIL.jpg');
 }
 .rocc {
-    background: url('../imgs/PHI_ROCC_THUMBNAIL.png');
+    background: url('../images/PHI_ROCC_THUMBNAIL.png');
 }
 .cloc {
-    background: url('../imgs/PHI_CLOC_THUMBNAIL.jpg');
+    background: url('../images/PHI_CLOC_THUMBNAIL.jpg');
 }
 .baptist {
-    background: url('../imgs/PHI_LOTUS_BAPTIST_THUMBNAIL.jpg');
+    background: url('../images/PHI_LOTUS_BAPTIST_THUMBNAIL.jpg');
 }
 .icu {
-    background: url('../imgs/adult-icu.jpg');
+    background: url('../images/adult-icu.jpg');
 }
 .omni {
-    background: url('../imgs/PHI_OMNI_CXLMobileThumb.png');
+    background: url('../images/PHI_OMNI_CXLMobileThumb.png');
 }
 .placeholder { 
-    background: url('../imgs/placeholder-tile.jpg');
+    background: url('../images/placeholder-tile.jpg');
 }
 .virtual-room { 
-    background: url('../imgs/adult-icu.jpg');
+    background: url('../images/adult-icu.jpg');
 }
 .pfcs { 
-    background: url('../imgs/hospital40-flow-view.png');
+    background: url('../images/hospital40-flow-view.png');
 }
 
 @media screen and (min-width:1440px) {
     .cmon {
-        background: url('../imgs/PHI_IRIS_THUMBNAIL.png');
+        background: url('../images/PHI_IRIS_THUMBNAIL.png');
     }
 }
 @media screen and (min-width:1024px) {
     .cmon {
-        background: url('../imgs/covid-screening.png');
+        background: url('../images/covid-screening.png');
     }
 }
 @media screen and (min-width:720px) {
     .cmon {
-        background: url('../imgs/covid-screening.png');
+        background: url('../images/covid-screening.png');
     }
 }
 @media screen and (min-width:480px) {
     .cmon {
-        background: url('../imgs/covid-screening.png');
+        background: url('../images/covid-screening.png');
     }
 }
 @media screen and (min-width:375px) {
     .cmon {
-        background: url('../imgs/covid-screening.png');
+        background: url('../images/covid-screening.png');
     }
 }
 /* Philips Fonts */
@@ -237,10 +238,7 @@ label {
   
   
 }  
-span {  
-    color: white;  
-    font-size: 1.5em;  
-}  
+
 a {  
     float: right;  
     background-color: grey;  
@@ -254,3 +252,48 @@ a {
     margin: auto;
     font-size: 12em;
   }
+
+  /* Material Icon Sizes */
+
+  .md-18 { font-size: 18px !important; }
+  .md-24 { font-size: 24px !important; }
+  .md-36 { font-size: 36px !important; }
+  .md-48 { font-size: 48px !important; }
+
+  /* Material Icon Color */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+.back-arrow {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+/* ROCC tablet view */
+.rocc-slide1 { 
+    background: url('../rocc/images/Slide1.jpg');
+}
+.rocc-slide2 { 
+    background: url('../rocc/images/Slide2.jpg');
+}
+.rocc-slide3 { 
+    background: url('../rocc/images/Slide3.JPG');
+}
+.rocc-slide4 { 
+    background: url('../rocc/images/Slide4.JPG');
+}
+.rocc-slide5 { 
+    background: url('../rocc/images/Slide5.JPG');
+}
+.rocc-slide6 { 
+    background: url('../rocc/images/Slide6.JPG');
+}
+.rocc-slide7 { 
+    background: url('../rocc/images/Slide7.JPG');
+}
+.rocc-slide9 { 
+    background: url('../rocc/images/Slide9.JPG');
+}
+.rocc-slide10 { 
+    background: url('../rocc/images/Slide10.JPG');
+}

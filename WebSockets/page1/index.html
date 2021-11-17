@@ -3,47 +3,92 @@
     <head>
         <script type="text/javascript" src="./../js/jquery-3.2.0.min.js"></script>
         <script type="text/javascript" src="./../js/socket.io-3.0.1.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/tablet_styles.css">
-        <link href="https://file.myfontastic.com/ayvYq9t8hUPRJLcfEcxfLM/icons.css" rel="stylesheet">
         <style> 
-        .pageImg {
-            display: none;
-        }
-        body{
-        margin: 0px;
-        padding: 0px;
-        overflow:hidden;
-        }
+            .pageImg {
+                display: none;
+            }
+            body{
+                margin: 0px;
+                padding: 0px;
+                overflow:hidden;
+            }
+            .embed-container {
+                /* --video--width: 1296;
+                --video--height: 540; */
+
+                --video--width: 3840;
+                --video--height: 1440;
+
+                position: relative;
+                padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
+                overflow: hidden;
+                max-width: 100%;
+                background: black;
+                }
+
+                .embed-container iframe,
+                .embed-container object,
+                .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         </style>    
     </head>
     <body>
         <!-- Sleep -->
         <div class="pageImg p1img0">
-            <video width="5760" height="3840" src="./video/cxl-landing.mp4" style="position: fixed; margin-top: -840px;" frameborder="0" controls autoplay loop>
+            <video width="3840" height="1440" src="./video/cxl-landing.mp4" style="position: fixed;" frameborder="0" controls autoplay loop>
             </iframe>
         </div>
         <!-- Landing -->
-        <img class="pageImg p1img1" src="PHI_VXC_WelcomeScreen.png" />
+        <img class="pageImg p1img1" src="images/PHI_VXC_WelcomeScreen.png" width="3840" height="1440"/>
         <!-- cloc -->
         <div class="pageImg p1img2">
-            <iframe src="https://storage.net-fs.com/hosting/6582882/1/" height="2400" width="5760" allowfullscreen="" frameborder="0">
+            <iframe src="https://storage.net-fs.com/hosting/6582882/1/" width="3840" height="1440" allowfullscreen="" frameborder="0">
             </iframe>
         </div>
         <!-- baptist -->
         <div class="pageImg p1img3">
-            <iframe src="https://storage.net-fs.com/hosting/6582882/0/" height="2400" width="5760" allowfullscreen="" frameborder="0">
+            <iframe src="https://storage.net-fs.com/hosting/6582882/0/" width="3840" height="1440" allowfullscreen="" frameborder="0">
             </iframe>
         </div>
         <!-- iris -->
         <div class="pageImg p1img4">
-            <iframe src="https://storage.net-fs.com/hosting/6582882/3/" height="2400" width="5760" allowfullscreen="" frameborder="0">
+            <iframe src="https://storage.net-fs.com/hosting/6582882/3/" width="3840" height="1440" allowfullscreen="" frameborder="0">
             </iframe>
         </div>
         <!-- OMNI -->
-        <div class="pageImg p1img5" style="background-image: url(../page1/interior-airbag-bkg.jpg); width: 5760px; height: 2160px;">
-            <iframe width="2560" height="1440" src="https://www.youtube.com/embed/z6hU5hUZspk" style="margin-top: 400px; margin-left:1600px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <div class="pageImg p1img5" style="background-image: url(../page1/images/interior-airbag-bkg.jpg); width: 3840px; height: 1440px;">
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/z6hU5hUZspk" style="margin-top: 200px; margin-left:1000px;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+        <!-- ROCC- VIDEO -->
+        <!-- <div class="pageImg p1img6" style= "width: 3840px; height: 1440px;">
+            <iframe src="https://player.vimeo.com/video/582694090" width="3840" height="1440" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <!-- Rocc - Video -->
+        <div class="pageImg p1img6">
+            <video width="3840" height="1440" src="./video/Philips-ROCC.mp4" style="position: fixed;" frameborder="0" controls autoplay loop>
+            </iframe>
+        </div>
+        <!-- ROCC Slides -->
+        <!-- slide 1 -->
+        <img class="pageImg p1img7" src="../tablet/rocc/images/Slide1.jpg" width="3840" height="1440"/>
+        <!-- slide 2 -->
+        <img class="pageImg p1img8" src="../tablet/rocc/images/Slide2.jpg" width="3840" height="1440"/>
+
+        <!-- slide 3 -->
+        <img class="pageImg p1img9" src="../tablet/rocc/images/Slide3.jpg" width="3840" height="1440"/>
+
+        <!-- slide 4 -->
+        <img class="pageImg p1img10" src="../tablet/rocc/images/Slide4.jpg" width="3840" height="1440"/>
+
+        <!-- slide 5 -->
+        <img class="pageImg p1img11" src="../tablet/rocc/images/Slide5.jpg" width="3840" height="1440"/>
+
         <script src="./../js/pageLogic.js"></script>
         <script type="text/javascript">
             $(function() {
